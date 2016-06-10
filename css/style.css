@@ -421,19 +421,19 @@ button {
   background-color: #2978A0;
 }
 .single-project:nth-of-type(1) .cd-title::before {
-  background-image: url(../img/img-1.jpg);
+  background-image: url(../img/food-background-1.jpg);
 }
 .single-project:nth-of-type(2) .cd-title {
   background-color: #315659;
 }
 .single-project:nth-of-type(2) .cd-title::before {
-  background-image: url(../img/img-2.jpg);
+  background-image: url(../img/food-background-2.jpg);
 }
 .single-project:nth-of-type(3) .cd-title {
   background-color: #BCAB79;
 }
 .single-project:nth-of-type(3) .cd-title::before {
-  background-image: url(../img/img-3.jpg);
+  background-image: url(../img/food-background-3.jpg);
 }
 .single-project:nth-of-type(1) .cd-title::before, .single-project:nth-of-type(2) .cd-title::before, .single-project:nth-of-type(3) .cd-title::before {
   background-size: cover;
