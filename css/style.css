@@ -1056,3 +1056,17 @@ button {
 .tomatoes {
 	background-image: url(../img/ingredient-tomatoes.jpg);
 }
+
+.place {
+  padding:20px;
+  border: 1px solid green;
+  margin:20px;
+  width:100%;
+}
+.menuButton {
+  padding:20px;
+  background-color:white;
+  margin:20px;
+  font-size:20px;
+  
+}
