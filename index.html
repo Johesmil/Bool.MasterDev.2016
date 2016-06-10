@@ -66,8 +66,8 @@
 				<div class="cd-project-info">
 					<button class="cd-scroll">Scroll down</button>
 
-					<div class="content-wrapper">
-                        <div ng-app="RobotBuster" ng-controller="rbCtrl">
+					<div class="content-wrapper" ng-app="RobotBuster" ng-controller="rbCtrl">
+                        <div>
                             <table>
                                 <tr ng-click="remove(stuffs, $index)" ng-repeat="x in stuffs">
                                     <td>{{x}}</td>
@@ -80,7 +80,7 @@
                             <!--<button ng-click="hash()">hash</button>-->
                             <!--<button ng-click="verifyHuman()">Are you really a person?</button>-->
                         </div>
-                        <div class="ng-class: contentclass;">
+                        <div ng-class="{{contentclass}}">
     						<p>
     							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
     						</p>
