@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/resturantData.js"></script>
+	<script src="js/resturants.js"></script>
   	
 	<title>Hungrigare.se</title>
 </head>
@@ -34,12 +37,18 @@
 			<li class="single-project">
 				<div class="cd-title">
 					<h2>Menu of today</h2>
+					
+					
 				</div> <!-- .cd-title -->
 
 				<div class="cd-project-info">
 					<button class="cd-scroll">Scroll down</button>
 					
 					<div class="content-wrapper">
+						<button type="button" onclick='resturants.showBars()'>Give me a decent beer!!</button>
+						<button type="button" onclick='resturants.showDiners()'>I could eat a horse!</button>
+						<div id='placesToEat'>tet</div>
+						
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
 						</p>
