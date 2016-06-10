@@ -7,9 +7,9 @@ app.controller("rbCtrl", function($scope) {
     $scope.contentclass = "bool-nope";
     $scope.verified = false;
 
-    $scope.originalStuffs = ["This ", "could ", "have ", "been ", "tedious ", "but ", "it ", "isn't "];
+    $scope.originalStuffs = ["This ", "could ", "have ", "been ", "giraff ", "tedious ", "but ", "it ", "hawk", "isn't "];
 
-    $scope.stuffs = ["This ", "could ", "have ", "been ", "tedious ", "but ", "it ", "isn't "];
+    $scope.stuffs = ["This ", "could ", "have ", "been ", "giraff ", "tedious ", "but ", "it ", "hawk", "isn't "];
     
     $scope.inputOrder = [];
     $scope.inputString = "";
