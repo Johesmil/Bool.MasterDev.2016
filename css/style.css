@@ -1021,3 +1021,38 @@ button {
 	text-align: center;
 	padding-bottom: 40px;
 }
+
+.bool-ingredient-box {
+	display: block;
+	width: 400px;
+	height: 400px;
+	line-height: 400px;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+}
+
+.beans {	
+	background-image: url(../img/ingredient-beans.jpg);
+}
+
+.curry {
+	background-image: url(../img/ingredient-curry.jpg);
+}
+
+.fish {
+	background-image: url(../img/ingredient-fish.jpg);
+}
+
+.mushrooms {
+	background-image: url(../img/ingredient-mushrooms.jpg);
+	font-size: 60px;	
+}
+
+.spinach {
+	background-image: url(../img/ingredient-spinach.jpg);
+}
+
+.tomatoes {
+	background-image: url(../img/ingredient-tomatoes.jpg);
+}
