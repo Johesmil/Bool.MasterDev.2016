@@ -67,20 +67,30 @@
 					<button class="cd-scroll">Scroll down</button>
 
 					<div class="content-wrapper" ng-app="RobotBuster" ng-controller="rbCtrl">
-                        <div>
-                            <table>
-                                <tr ng-click="remove(stuffs, $index)" ng-repeat="x in stuffs">
-                                    <td>{{x}}</td>
-                                </tr> 
+                        <div class="bool-robot-verifier" ng-show="!verified">
+                            <h1>We need to verify you are a human</h1>
+                            <div class="bool-robot-description">Create a <strong>sincere</strong> sentence by clicking the words below </div>
 
-                                
-                            </table>
-                            <input ng-model="addThis">
-                            <button ng-click="addStuffs()">Add</button>
+                            
+                            <div class="bool-robot-item-wrapper">
+                                <div ng-show="inputString" class="bool-robot-sentence">{{inputString}}</div>
+                                <!-- REPEAT -->
+                                <div class="bool-robot-item" ng-click="remove(stuffs, $index)" ng-repeat="x in stuffs">
+                                    {{x}}
+                                </div> 
+                
+                            </div>
+                            <!--<input ng-model="addThis">-->
+                            <!--<button ng-click="addStuffs()">Add</button> -->
                             <!--<button ng-click="hash()">hash</button>-->
                             <!--<button ng-click="verifyHuman()">Are you really a person?</button>-->
+                            <button class="bool-robot-button" ng-click="retry()">No? Retry</button>
+
                         </div>
-                        <div ng-class="{{contentclass}}">
+                        <div ng-show="!verified"></div>
+                        
+                        
+                        <div ng-show="verified">
     						<p>
     							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
     						</p>
@@ -92,6 +102,8 @@
     						<p>
     							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem tempora laborum, nam, est delectus mollitia sapiente dicta nihil, ipsam qui hic tempore corporis. Illum quaerat omnis iusto ut molestias at perferendis corrupti voluptate neque harum pariatur mollitia molestiae a sequi, magni, vel quisquam dolores ipsa, quibusdam iure debitis sapiente eum. Explicabo enim, natus ea nesciunt ab ut ipsum. Dignissimos maiores non eum, voluptas iusto tempore enim vitae quo natus amet voluptates sit consequuntur itaque molestias adipisci id fuga! Officiis nam iusto incidunt quis, facere voluptate deleniti error et fugit ex, nostrum mollitia, minima ducimus rerum eveniet quam suscipit odit!
     						</p>
+                    
+
                     </div> <!-- end ng-class contentclass -->
 					</div>
 				</div> <!-- .cd-project-info -->

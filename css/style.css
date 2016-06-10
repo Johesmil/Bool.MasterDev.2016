@@ -1021,3 +1021,93 @@ button {
 	text-align: center;
 	padding-bottom: 40px;
 }
+
+
+
+div.bool-nope {
+  /* Best practice*/
+  display: none !important;
+}
+div.bool-yay-no-robot {
+  display: block;
+}
+
+.bool-robot-buster-init{
+  display:block;
+}
+.bool-robot-item-wrapper{
+  float:left;
+  width: 300px;
+}
+.bool-robot-item{
+  padding: 5px 10px;
+  margin: 4px;
+  box-shadow: inset 1px 0 #66bfff;
+  border-color: #07c;
+  background-color: #0095ff;
+  color: #fff;
+  float: left;
+  border-radius: 5px;
+  border:1px;
+}
+.bool-robot-item:hover{
+  transition-duration: 0.1s;
+  padding: 5px 10px;
+  margin: 4px;
+  
+  color: #fff;
+  float: left;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.9);
+  background-color: #07c;
+  border-color: #005999;
+  box-shadow: inset 0 1px 0 #3af;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  outline: none;
+  border:1px;
+}
+.bool-robot-button{
+   clear: both;
+    padding: 10px 15px;
+    margin: 4px;
+    box-shadow: inset 1px 0 #621;
+    border-color: #c32;
+    background-color: #f52;
+    color: #fff;
+    float: left;
+    border-radius: 5px;
+    border:1px;
+}
+
+.bool-robot-sentence{
+    padding: 5px 10px;
+    margin: 4px;
+    box-shadow: inset 1px 0 #032;
+    border-color: #253;
+    background-color: #5c5;
+    color: #fff;
+    float: left;
+    border-radius: 5px;
+    border:1px;
+}
+.bool-robot-verifier{
+  height:250px;
+}
+
+.bool-robot-verifier h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bool-robot-description{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.bool-robot-description strong{
+  font-weight: bold;
+}
+/*.bool-robot-verifier{
+  border:2px;
+  border-color: #07c;
+}*/
