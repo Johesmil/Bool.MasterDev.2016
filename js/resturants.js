@@ -7,7 +7,6 @@
            resultString.push(getPlacePrintString(place, "restaurant"));
         });
         debugger
-        
         $('#placesToEat').empty();
         $('#placesToEat').append(resultString.join(''));
     };
@@ -16,7 +15,6 @@
         var resultString = [""];
         $.each(resturantData, function (key, place){
             resultString.push(getPlacePrintString(place, "bar"));
-
         });
         debugger
         $('#placesToEat').empty();
@@ -30,9 +28,9 @@
                 resultString.push("<div class='bool-grid-cell place'>");
                 resultString.push(["<p>",place.name,"</p>"].join(''));
                 if(place.opening_hours && place.opening_hours.open_now){
-                    resultString.push("open now!!<br><br>");
+                    resultString.push("<span style='color:green'>open now!!</span><br><br>");
                 } else {
-                    resultString.push("to bad, this place is closed :(<br><br>");
+                    resultString.push("<span style='color:red'>to bad, this place is closed :(</span><br><br>");
                 }
                 
                 resultString.push([ place.formatted_address,'<br><br>'].join(''))
@@ -47,7 +45,6 @@
           return resultString.join(''); 
         
     }
-    
     
     
     window.resturants = window.resturants || {};
